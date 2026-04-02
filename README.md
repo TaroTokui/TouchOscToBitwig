@@ -1,7 +1,8 @@
 # TouchOscToBitwig
 
-TouchDesigner project that bridges **TouchOSC** and **Bitwig Studio** via OSC.  
-Bitwig のトラック情報（ボリューム、ミュート、ソロ、アーム、カラーなど）を TouchDesigner で受け取り、TouchOSC デバイスから操作できるようにします。
+A TouchDesigner project that bridges **TouchOSC** and **Bitwig Studio** via OSC. Receives track information (volume, mute, solo, arm, color, etc.) from Bitwig and controls it from a TouchOSC device.
+
+TouchOSC と Bitwig Studio を OSC でつなぐ TouchDesigner プロジェクトです。Bitwig のトラック情報（ボリューム、ミュート、ソロ、アーム、カラーなど）を TouchDesigner で受け取り、TouchOSC デバイスから操作できるようにします。
 
 ---
 
