@@ -1,0 +1,10 @@
+# TouchDesigner backup files
+*.1.toe
+*.2.toe
+*.3.toe
+*.4.toe
+*.5.toe
+*.bak
+
+# Claude
+.claude/
