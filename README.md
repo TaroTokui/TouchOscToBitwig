@@ -55,7 +55,7 @@ Messages sent from TouchOSC to TouchDesigner:
 
 1. Open `TouchOscToBitwig.toe` in TouchDesigner
 2. Adjust connection parameters in `bitwigMain`
-3. Set the destination IP in `oscout2` to your TouchOSC device's IP
+3. Set the destination IP in `oscout_ipad` to your TouchOSC device's IP
 4. Configure your TouchOSC layout to match the OSC message format above
 
 ### Connecting an iPad (TouchOSC)
@@ -68,10 +68,10 @@ Requirement: the iPad and the PC running TouchDesigner must be on the same Wi-Fi
    - **Send Port**: `10001` (iPad → TouchDesigner)
    - **Receive Port**: `10002` (TouchDesigner → iPad)
    - Enable the connection
-3. In TouchDesigner, check the iPad's IP address (Wi-Fi settings on the iPad) and set it as the **Address** parameter on `/project1/oscout2`.
+3. In TouchDesigner, check the iPad's IP address (Wi-Fi settings on the iPad) and set it as the **Address** parameter on `/project1/oscout_ipad`.
 4. Test by moving a fader/toggle in the TouchOSC layout and confirming the value updates in TouchDesigner (and vice versa).
 
-Note: if the iPad gets a new IP from DHCP, `oscout2`'s address will go stale and must be updated again. Consider reserving a fixed IP for the iPad on your router (DHCP reservation) to avoid this.
+Note: if the iPad gets a new IP from DHCP, `oscout_ipad`'s address will go stale and must be updated again. Consider reserving a fixed IP for the iPad on your router (DHCP reservation) to avoid this.
 
 ---
 
@@ -124,7 +124,7 @@ TouchOSC から TouchDesigner へ送信するアドレス形式：
 
 1. `TouchOscToBitwig.toe` を TouchDesigner で開く
 2. `bitwigMain` の接続パラメータを環境に合わせて調整
-3. `oscout2` の送信先 IP アドレスを TouchOSC デバイスの IP に変更
+3. `oscout_ipad` の送信先 IP アドレスを TouchOSC デバイスの IP に変更
 4. TouchOSC のレイアウトを上記 OSC フォーマットに合わせて設定
 
 ### iPad（TouchOSC）と接続する手順
@@ -137,10 +137,10 @@ TouchOSC から TouchDesigner へ送信するアドレス形式：
    - **Send Port**: `10001`（iPad → TouchDesigner）
    - **Receive Port**: `10002`（TouchDesigner → iPad）
    - 接続を有効化（Enabled）にする
-3. TouchDesigner 側で、iPad の現在の IP アドレス（iPad の Wi-Fi 設定で確認）を `/project1/oscout2` の **Address** パラメータに設定する。
+3. TouchDesigner 側で、iPad の現在の IP アドレス（iPad の Wi-Fi 設定で確認）を `/project1/oscout_ipad` の **Address** パラメータに設定する。
 4. TouchOSC のフェーダーやトグルを操作し、TouchDesigner 側の値が更新されることを確認する（逆方向も確認）。
 
-補足: iPad の IP アドレスが DHCP で変わると `oscout2` の設定が古いままになり再設定が必要になる。ルーターで iPad に固定IP（DHCP予約）を割り当てておくと、この手間を避けられる。
+補足: iPad の IP アドレスが DHCP で変わると `oscout_ipad` の設定が古いままになり再設定が必要になる。ルーターで iPad に固定IP（DHCP予約）を割り当てておくと、この手間を避けられる。
 
 ---
 

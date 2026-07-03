@@ -10,7 +10,7 @@ Sync to File で読み込まれ、各コールバック DAT から
     common = mod('bridgeCommon')
 
 として参照される。パラメータの対応表とヘルパーをここに一元化し、
-oscin2_callbacks / chopexec1 / chopexec2 は薄いディスパッチだけを持つ。
+oscin_ipad_callbacks / oscin_bitwig_callbacks / chopexec1 / chopexec2 は薄いディスパッチだけを持つ。
 
 設計方針:
 - TDBitwig パッケージのコード (BitwigTrackExt 等) は変更しない。
